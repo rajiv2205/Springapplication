@@ -19,6 +19,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 	
 	@Transactional(propagation = Propagation.REQUIRED, readOnly = false)
 	public void addEmployee(Employee employee) {
+		try{
+			
+		} catch (Exception e){
+			
+		}
 		employeeDao.addEmployee(employee);
 	}
 	

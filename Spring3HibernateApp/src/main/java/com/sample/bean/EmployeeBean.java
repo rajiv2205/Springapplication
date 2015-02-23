@@ -2,7 +2,7 @@ package com.sample.bean;
 
 public class EmployeeBean {
 	private Integer id;
-	private String name;
+	private String Name;
 	private Integer age;
 	private Long salary;
 	private String address;
@@ -20,10 +20,10 @@ public class EmployeeBean {
 		this.id = id;
 	}
 	public String getName() {
-		return name;
+		return Name;
 	}
 	public void setName(String name) {
-		this.name = name;
+		this.Name = name;
 	}
 	public Integer getAge() {
 		return age;
