@@ -7,8 +7,10 @@ import org.junit.Test;
 public class EmployeeBeanTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testGetterSetter() {
+		EmployeeBean employeeBean = new EmployeeBean();
+		employeeBean.setName("name");
+		assertEquals("Setter not returning right name", "name", employeeBean.getName());
 	}
 
 }
