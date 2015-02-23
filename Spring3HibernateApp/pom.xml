@@ -6,7 +6,7 @@
 	<packaging>war</packaging>
 
 	<build>
-		<sourceDirectory>src</sourceDirectory>
+		<!-- <sourceDirectory>src</sourceDirectory>
 		<resources>
 			<resource>
 				<directory>src</directory>
@@ -14,7 +14,7 @@
 					<exclude>**/*.java</exclude>
 				</excludes>
 			</resource>
-		</resources>
+		</resources> -->
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -28,14 +28,9 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.1.1</version>
 				<configuration>
-					<warName>SampleWebapp</warName>
-					<!-- <webXml>WebRoot\WEB-INF\web.xml</webXml> -->
+					<warName>Spring3HibernateApp</warName>
 				</configuration>
 			</plugin>
-			<!-- <plugin> <groupId>org.zeroturnaround</groupId> <artifactId>jrebel-maven-plugin</artifactId> 
-				<version>1.1.5</version> <executions> <execution> <id>generate-rebel-xml</id> 
-				<phase>process-resources</phase> <goals> <goal>generate</goal> </goals> </execution> 
-				</executions> </plugin> -->
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat6-maven-plugin</artifactId>
@@ -51,7 +46,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<warFile>target/SampleWebapp.war</warFile>
+					<warFile>target/Spring3HibernateApp.war</warFile>
 					<path>/</path>
 					<update>true</update>
 					<port>11011</port>
@@ -60,7 +55,7 @@
 		</plugins>
 	</build>
 	<version>1.0-SNAPSHOT</version>
-	<name>SampleWebapp</name>
+	<name>Spring3HibernateApp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
