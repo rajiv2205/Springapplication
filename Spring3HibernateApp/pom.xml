@@ -14,14 +14,10 @@
 				<artifactId>findbugs-maven-plugin</artifactId>
 				<version>2.5.2</version>
 				<configuration>
-					<!-- Enables analysis which takes more memory but finds more bugs. If 
-						you run out of memory, changes the value of the effort element to 'low'. -->
-					<effort>Max</effort>
-					<!-- Reports all bugs (other values are medium and max) -->
-					<threshold>Low</threshold>
-					<!-- Produces XML report -->
 					<xmlOutput>true</xmlOutput>
+        			<!-- Optional directory to put FindBugs xdoc xml report -->
 					<xmlOutputDirectory>target/site</xmlOutputDirectory>
+					<threshold>High</threshold>
 				</configuration>
 			</plugin>
 			<plugin>
