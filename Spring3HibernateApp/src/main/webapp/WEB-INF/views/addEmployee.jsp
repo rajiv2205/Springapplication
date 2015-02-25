@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<h2>Add Employee Data</h2>
-		<form:form method="POST" action="/save.html">
+		<form:form method="POST" action="save.html">
 	   		<table>
 			    <tr>
 			        <td><form:label path="id">Employee ID:</form:label></td>
