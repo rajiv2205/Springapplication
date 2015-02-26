@@ -1,2 +1,2 @@
-# ContinuousIntegration
-A test repo to show Continuous Integration in parallel development setup
+# ContinuousIntegration.
+A test repo to show Continuous Integration in parallel development setup.
