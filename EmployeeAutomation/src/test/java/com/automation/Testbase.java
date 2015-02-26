@@ -1,4 +1,4 @@
-package com.automation;
+package com.automation.base;
 
 import java.io.FileInputStream;
 import java.util.Properties;
@@ -23,6 +23,7 @@ public class Testbase {
     public static Properties OR = null;
     public WebDriver wbDv = null;
     public static EventFiringWebDriver driver = null;
+  
 
     @BeforeSuite
     public void intilize()
@@ -30,12 +31,29 @@ public class Testbase {
         // loading all the configuration values
         try {
             
+            config = new Properties();
+            String string = System.getProperty("os.name").toString();
+            System.out.println(string);
+            
+             if (string.contains("Windows 7"))
+                {
+                 FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"\\config\\MainConfig.properties");
+                 config.load(fp);
+                  
+                }
+                else {
+                    FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"/config/MainConfig.properties");
+                    config.load(fp);
+                    
+                }
+            
+            
             wbDv= new FirefoxDriver();
             driver = new EventFiringWebDriver(wbDv);
 
             // Entering the website URL
             Reporter.log("Navigate to url");
-            driver.navigate().to("http://localhost:9080/Spring3HibernateApp/");
+            driver.navigate().to(config.getProperty("URL"));
 
             // maximizing the Browser window
             driver.manage().window().maximize();
