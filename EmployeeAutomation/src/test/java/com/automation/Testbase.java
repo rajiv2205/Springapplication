@@ -1,5 +1,6 @@
-package com.automation.base;
+package com.automation;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
@@ -35,17 +36,19 @@ public class Testbase {
             String string = System.getProperty("os.name").toString();
             System.out.println(string);
             
-             if (string.contains("Windows 7"))
+/*             if (string.contains("Windows 7"))
                 {
                  FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"\\config\\MainConfig.properties");
                  config.load(fp);
                   
                 }
-                else {
-                    FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"/config/MainConfig.properties");
+                else {*/
+//                    FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+"/config/MainConfig.properties");
+                    FileInputStream fp = new FileInputStream(System.getProperty("user.dir")+File.separator+"config" + File.separator+
+                    		"MainConfig.properties");
                     config.load(fp);
                     
-                }
+//                }
             
             
             wbDv= new FirefoxDriver();
