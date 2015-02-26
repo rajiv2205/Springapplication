@@ -39,4 +39,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		employeeDao.deleteEmployee(employee);
 	}
 
+	protected void setEmployeeDao(EmployeeDao employeeDao) {
+		this.employeeDao = employeeDao;
+	}
 }
