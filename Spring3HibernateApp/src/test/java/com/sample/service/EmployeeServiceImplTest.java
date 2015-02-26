@@ -42,6 +42,6 @@ public class EmployeeServiceImplTest {
 		employeeService.setEmployeeDao(employeeDao);
 		Employee employee = employeeService.getEmployee(1);
 		
-		assertEquals("Name didn't matched", "Sandt", employee.getEmpName());
+		assertEquals("Name didn't matched", "Sandy", employee.getEmpName());
 	}
 }
