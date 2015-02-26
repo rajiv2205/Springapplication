@@ -1,4 +1,4 @@
-package com.automation.base;
+package com.automation;
 
 import java.io.FileInputStream;
 import java.util.Properties;
@@ -35,7 +35,7 @@ public class Testbase {
 
             // Entering the website URL
             Reporter.log("Navigate to url");
-            driver.navigate().to("http://192.168.2.24:11011/");
+            driver.navigate().to("http://localhost:9080/Spring3HibernateApp/");
 
             // maximizing the Browser window
             driver.manage().window().maximize();
