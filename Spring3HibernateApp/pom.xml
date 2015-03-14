@@ -14,8 +14,8 @@
 	 <distributionManagement>
    <!-- use the following if you're not using a snapshot version. -->
    <repository>
-     <id>artifcatory</id>
-     <name>artifactory-releases</name>
+     <id>central</id>
+     <name>central</name>
      <url>http://devserver.lybrate.com:8081/artifactory/libs-release-local</url>
    </repository>
  </distributionManagement>
