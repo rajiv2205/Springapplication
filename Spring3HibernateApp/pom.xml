@@ -18,6 +18,12 @@
      <name>central</name>
      <url>http://devserver.lybrate.com:8081/artifactory/libs-release-local</url>
    </repository>
+	<snapshotRepository>
+          <id>snapshots</id>
+          <name>libs-snapshot-local</name>
+          <url>http://devserver.lybrate.com:8081/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+	
  </distributionManagement>
 	<reporting>
 		<plugins>
