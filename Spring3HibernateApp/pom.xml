@@ -8,7 +8,7 @@
 		<developerConnection>
 			scm:git:git@github.com:OpsTree/ContinuousIntegration.git
 		</developerConnection>
-	  <tag>Spring3HibernateApp-1.4</tag>
+	  <tag>HEAD</tag>
   </scm>
 
 	 <distributionManagement>
@@ -136,7 +136,7 @@
 			</plugin>
 		</plugins>
 	</build>
-	<version>1.4</version>
+	<version>1.5-SNAPSHOT</version>
 	<name>Spring3HibernateApp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
