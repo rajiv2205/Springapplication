@@ -5,6 +5,11 @@
 	<artifactId>Spring3HibernateApp</artifactId>
 	<packaging>war</packaging>
 
+	<scm>
+		<developerConnection>
+			scm:git:git@github.com:OpsTree/ContinuousIntegration.git
+		</developerConnection>
+	</scm>
 	<reporting>
 		<plugins>
 			<plugin>
@@ -28,6 +33,11 @@
 		<!-- <sourceDirectory>src</sourceDirectory> <resources> <resource> <directory>src</directory> 
 			<excludes> <exclude>**/*.java</exclude> </excludes> </resource> </resources> -->
 		<plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.1</version>
+      </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
