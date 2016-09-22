@@ -54,6 +54,25 @@
         <artifactId>maven-release-plugin</artifactId>
         <version>2.5.1</version>
       </plugin>
+<plugin>
+              <groupId>external.atlassian.jgitflow</groupId>
+              <artifactId>jgitflow-maven-plugin</artifactId>
+              <version>1.0-m4.3</version>
+              <configuration>
+                 <pushReleases>true</pushReleases>
+                 <keepBranch>false</keepBranch>
+                 <noTag>true</noTag>
+                 <autoVersionSubmodules>true</autoVersionSubmodules>
+                 <allowUntracked>true</allowUntracked>
+          <pullDevelop>true</pullDevelop>
+                 <pullMaster>true</pullMaster> 
+                 <allowSnapshots>true</allowSnapshots>                 
+          <flowInitContext>
+                    <masterBranchName>production</masterBranchName>
+                    <developBranchName>master</developBranchName>
+                 </flowInitContext>
+              </configuration>
+           </plugin> 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
