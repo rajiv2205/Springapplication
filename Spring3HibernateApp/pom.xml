@@ -7,7 +7,7 @@
 
 	<scm>
 		<developerConnection>
-			scm:git:git@github.com:OpsTree/ContinuousIntegration.git
+			scm:git:git@github.com:rajiv2205/Springapplication.git
 		</developerConnection>
 	  <tag>HEAD</tag>
   </scm>
